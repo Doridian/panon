@@ -28,6 +28,12 @@ sudo zypper in qt6-shadertools qt6-websockets-imports \
     python3-docopt python3-numpy python3-PyAudio python3-websockets
 ```
 
+### Nobara
+```sh
+sudo dnf install qt6-qtwebsockets-devel qt6-qtshadertools \
+    python3-docopt python3-numpy python3-pyaudio python3-websockets
+```
+
 ### Arch Linux
 ```sh
 sudo pacman -S --asdeps qt6-shadertools qt6-websockets \

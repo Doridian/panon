@@ -3,13 +3,12 @@ name: Bug report
 about: Create a report to help us improve
 title: "[BUG] {title}"
 labels: bug
-assignees: ''
-
+assignees: flafflar
 ---
 
-**Desktop (please complete the following information):**
- - OS: [e.g. ArchLinux or Ubuntu]
- - Version of Plasma Framework
+**System information:**
+ - OS (Distro and version)
+ - Version of Plasma Framework (available in the Info Center)
 
 **Describe the bug**
 A clear and concise description of what the bug is.
@@ -17,8 +16,11 @@ A clear and concise description of what the bug is.
 **Any error message shown in the console**
 Please execute the following commands in the console and upload the outputs.
 
-git clone https://github.com/rbn42/panon.git
+> *Important:* You first need to install `plasma-sdk` for the `plasmoidviewer` command to be available.
+
+```sh
+git clone https://github.com/flafflar/panon.git
 cd panon
 git submodule update --init
-# You need to install plasma-sdk to get plasmoidviewer.
-plasmoidviewer --applet ./plasmoid/
+plasmoidviewer --applet=plasmoid
+```
